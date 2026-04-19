@@ -19,8 +19,8 @@ RAW_TRACKS_DIR.mkdir(parents=True, exist_ok=True)
 DATABASE_URL = f"sqlite+aiosqlite:///{DATA_DIR}/aerotrack.db"
 
 OPENSKY_BASE_URL = "https://opensky-network.org/api"
-OPENSKY_CLIENT_ID = "batoul.nasser@net.usj.edu.lb-api-client"
-OPENSKY_CLIENT_SECRET = "VzX2h4C1dkYTT86ImLYZzJNdXrHSqMtT"
+OPENSKY_CLIENT_ID = os.getenv("OPENSKY_CLIENT_ID", "")
+OPENSKY_CLIENT_SECRET = os.getenv("OPENSKY_CLIENT_SECRET", "")
 
 # Preprocessing
 RESAMPLE_INTERVAL_SECONDS = 30
