@@ -120,6 +120,17 @@ cd aerotrack
 ```
 
 ---
+## Run the project using Docker
+
+1. Pull the image:
+docker pull batoul27/aerotrack:latest
+
+2. Run the container:
+docker run -p 8000:8000 batoul27/aerotrack:latest
+
+3. Open in browser:
+http://localhost:8000
+
 
 ## 🧠 Backend Setup
 
